@@ -1,0 +1,21 @@
+.bodycontent {
+  width: 87%;
+  padding-top: 45%;
+  padding-left: 13%;
+  padding-bottom:5%;
+  justify-content: center;
+  background-color: #232323;
+}
+.pics {
+  width: 156px;
+  height: 231px;
+  padding: 10px;
+}
+.textContent{
+    padding-left:3px;
+    color:white;
+
+}
+.container2{
+    padding-top:30px;
+}

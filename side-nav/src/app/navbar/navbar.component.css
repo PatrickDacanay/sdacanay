@@ -1,0 +1,30 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.indi{
+    margin-top:23px;
+    width:40px;
+}
+.navcontain {
+  height:100%;
+  padding-top: 20px;
+  text-decoration:none;
+}
+.sidenav {
+    position:fixed;
+  width: 50px;
+  height: 100%;
+  background: #131313;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+ul {
+  color: #131313;
+}
+mat-icon{
+    color:white;
+    font-size:20px;
+}
