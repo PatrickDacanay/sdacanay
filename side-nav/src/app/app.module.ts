@@ -18,6 +18,7 @@ import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { FilmDetailComponent } from './filmdetail/filmdetail.component';
 import { FooterComponent } from './footer/footer.component';
+import { NavFooterComponent } from './navfooter/navfooter.component';
 import { MovieService } from './movie-service.service';
 import {MatInputModule} from '@angular/material/input';
 
@@ -31,6 +32,7 @@ import {MatInputModule} from '@angular/material/input';
     ContentComponent,
     FilmDetailComponent,
     FooterComponent,
+    NavFooterComponent,
   ],
   imports: [
     BrowserModule,

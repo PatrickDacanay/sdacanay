@@ -1,20 +1,21 @@
 <app-header></app-header>
 <div class="bodycontent">
-    <div class="container1">
-      <p class="textContent">Recenly Added Films</p>
-        <div class="containPics">
-          <a *ngFor="let data of addedmovie" href="/filmdetail/{{data.id}}">
-            <img class="pics" [src]="data.primaryImage.url" alt="{{ data.title }} Movie Image" srcset="" />
-          </a>
-        </div>
-    </div>
-    <div class="container2">
-      <p class="textContent">Top Rated Films</p>
+  <div class="container1">
+    <p class="textContent">Recenly Added Films</p>
       <div class="containPics">
-        <a *ngFor="let data of topratedfilm" href="/filmdetail/{{data.id}}">
+        <a *ngFor="let data of addedmovie" href="/filmdetail/{{data.id}}">
           <img class="pics" [src]="data.primaryImage.url" alt="{{ data.title }} Movie Image" srcset="" />
         </a>
       </div>
+  </div>
+  <div class="container2">
+    <p class="textContent">Top Rated Films</p>
+    <div class="containPics">
+      <a *ngFor="let data of topratedfilm" href="/filmdetail/{{data.id}}">
+        <img class="pics" [src]="data.primaryImage.url" alt="{{ data.title }} Movie Image" srcset="" />
+      </a>
     </div>
+  </div>
 </div>
 <app-footer></app-footer>
+<app-navfooter></app-navfooter>
