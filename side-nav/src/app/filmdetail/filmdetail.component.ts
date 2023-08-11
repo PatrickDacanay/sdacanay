@@ -23,7 +23,6 @@ export class FilmDetailComponent implements OnInit {
   }
 
   async getDetailsFilm() {
-    debugger;
     this.route.params.subscribe(async params => {
       const pagesToFetch = 16;
       const filmId = params['id'];

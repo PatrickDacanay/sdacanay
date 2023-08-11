@@ -24,7 +24,6 @@ export class SearchComponent {
   }
 
   async getupcomingmovies() {
-    debugger;
     const pagesToFetch = 16;
     this.moviesList = await this.movieService.getupcomingmovies(pagesToFetch);
   
@@ -34,7 +33,6 @@ export class SearchComponent {
   }
 
   async getmovies() {
-    debugger;
     const pagesToFetch = 16;
     const tempArray = await this.movieService.getmovies(pagesToFetch);
     
@@ -45,7 +43,6 @@ export class SearchComponent {
   }
 
   onChangeSearchKey(data :string) {
-    debugger;
     this.searchResult = this.moviesList.filter(function (str) { return str.originalTitleText.text.includes(data); });
   }
 }
