@@ -16,7 +16,10 @@ import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
+import { FilmDetailComponent } from './filmdetail/filmdetail.component';
 import { FooterComponent } from './footer/footer.component';
+import { MovieService } from './movie-service.service';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HeaderComponent,
     ContentComponent,
-    FooterComponent
+    FilmDetailComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,9 +42,10 @@ import { FooterComponent } from './footer/footer.component';
     MatIconModule,
     MatDividerModule,
     MatGridListModule,
-    FormsModule
+    FormsModule,
+    MatInputModule
   ],
-  providers: [],
+  providers: [ContentComponent, MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

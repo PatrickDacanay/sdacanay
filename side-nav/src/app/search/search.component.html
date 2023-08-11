@@ -1,1 +1,18 @@
-<p>search works!</p>
+
+<div class="bodycontent">
+    <div class="container1">
+                
+        <form>    
+            <mat-form-field class="example-full-width">
+                <mat-label>Search keyword</mat-label>
+                <input matInput placeholder="" #searchKey (keyup.enter)="onChangeSearchKey(searchKey.value)">
+            </mat-form-field>
+            <p class="textContent">Search Result</p>
+            <div class="containPics">
+            <a *ngFor="let data of searchResult" href="/filmdetail/{{data.id}}">
+                <img class="pics" [src]="data.primaryImage.url" alt="{{ data.title }} Movie Image" srcset="" />
+            </a>
+            </div>
+        </form>
+    </div>
+</div>

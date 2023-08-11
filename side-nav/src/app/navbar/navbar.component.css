@@ -20,6 +20,7 @@
   color: white;
   padding: 16px;
   text-align: center;
+  z-index: 99;
 }
 ul {
   color: #131313;
@@ -27,4 +28,8 @@ ul {
 mat-icon{
     color:white;
     font-size:20px;
+}
+
+.sidenav > img {
+  cursor: pointer
 }
